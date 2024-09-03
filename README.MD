@@ -15,7 +15,7 @@ You can configure the type of detection you want and the amount of blur, the lev
 -   Configurable detection settings to tailor your browsing experience
 -   Interactive pop-up for easy on/off toggling
 -   Customizable hover to unblur feature
--   Decent speed and accuracy (continously improved)
+-   Decent speed and accuracy (continuously improved)
 
 ## How it Works
 
