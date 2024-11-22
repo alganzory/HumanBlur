@@ -149,6 +149,43 @@ const getTranslations = (settings) => {
 				</p>
 			`,
         },
+        // Hindi
+        hi: {
+            "#settings": "सेटिंग्स",
+            "#blurryStart": "लोड पर मीडिया को धुंधला करें:",
+            ".tooltiptext":
+                "जब सक्षम हो, सभी छवियाँ और वीडियो डिटेक्शन शुरू होने तक धुंधली रहेंगी।",
+            "#blurAmount": `
+            धुंधलापन की मात्रा:
+            <span id="blur-amount-value">${settings.blurAmount}%</span>
+            `,
+            "#grayscale": "ग्रेस्केल:",
+            "#strictness": `कठोरता:
+            <span id="strictness-value">${settings.strictness * 100}%</span>
+            `,
+            "#mediaToBlur": "धुंधला करने के लिए मीडिया",
+            "#blurImages": "छवियाँ",
+            "#blurVideos": "वीडियो",
+            "#facesToBlur": "धुंधला करने के लिए चेहरे",
+            "#blurMale": "पुरुष",
+            "#blurFemale": "महिला",
+            "#unblurOnHover": "होवर पर स्पष्ट करें",
+            "#unblurImages": "छवियाँ",
+            "#unblurVideos": "वीडियो",
+            ".refresh": " (पेज रीफ्रेश की आवश्यकता है):",
+            "#refresh-message": "परिवर्तन देखने के लिए पेज को रीफ्रेश करें।",
+            ".bmc-btn-text": "प्रोजेक्ट का समर्थन करें",
+            ".feedback": `
+            <span> हम आपकी प्रतिक्रिया सुनना पसंद करते हैं </span> <a href="https://forms.gle/mDDjh44MKRVemWX86" target="_blank">फॉर्म</a> या 
+            <a href="mailto:md.alganzory@gmail.com" target="_blank">ईमेल</a> के माध्यम से ❤️
+            `,
+            "#whitelist-desc": `
+            <p id="whitelist-desc"> इस वेबसाइट के लिए डिटेक्शन 
+            <span id="whitelist-status-on" class="blue-text"> चालू </span> 
+            <span id="whitelist-status-off" class="red-text hidden"> बंद </span> 
+            है </p>
+            `,
+        },
     };
 };
 
@@ -157,4 +194,5 @@ const HB_TRANSLATIONS_DIR = {
     tr: "ltr",
     ar: "rtl",
     ur: "rtl",
+    hi: "ltr",
 };
