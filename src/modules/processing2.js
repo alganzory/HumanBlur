@@ -47,7 +47,7 @@ const processImage = (node, STATUSES) => {
             },
             (response) => {
                 // console.log("HB== handleElementProcessing", response, node)
-                removeBlurryStart(node);
+                // removeBlurryStart(node);
                 if (response.type === "error") {
                     console.warn("HB==Error while processing image", response);
                     node.dataset.HBstatus = STATUSES.ERROR;
@@ -215,7 +215,7 @@ const processVideo = async (node) => {
             canv.height = newHeight;
         }
 
-        removeBlurryStart(node);
+        // removeBlurryStart(node);
 
         // start the video detection loop but don't block the main thread
         requestIdleCB(() => {
