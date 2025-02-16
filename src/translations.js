@@ -149,6 +149,78 @@ const getTranslations = (settings) => {
 				</p>
 			`,
         },
+        // Ukrainian translations
+        uk: {
+            "#settings": "Налаштування",
+            "#blurryStart": "Розмивати медіа при завантаженні:",
+            ".tooltiptext": "Якщо увімкнено, всі зображення та відео будуть розмиті за замовчуванням, поки не почнеться розпізнавання.",
+            "#blurAmount": `
+            Рівень розмиття:
+            <span id="blur-amount-value">${settings.blurAmount}%</span>
+            `,
+            "#grayscale": "Чорно-білий режим:",
+            "#strictness": `Рівень суворості:
+            <span id="strictness-value">${settings.strictness * 100}%</span>
+            `,
+            "#mediaToBlur": "Медіа для розмиття",
+            "#blurImages": "Зображення",
+            "#blurVideos": "Відео",
+            "#facesToBlur": "Обличчя для розмиття",
+            "#blurMale": "Чоловічі",
+            "#blurFemale": "Жіночі",
+            "#unblurOnHover": "При наведенні прибрати розмиття",
+            "#unblurImages": "Зображення",
+            "#unblurVideos": "Відео",
+            ".refresh": " (потрібне перезавантаження сторінки):",
+            "#refresh-message": "Оновіть сторінку, щоб побачити зміни.",
+            ".bmc-btn-text": "Підтримати проєкт",
+            ".feedback": `
+            <span> Нам важливо почути вашу думку через </span> <a href="https://forms.gle/mDDjh44MKRVemWX86" target="_blank">форму</a> або 
+            <a href="mailto:md.alganzory@gmail.com" target="_blank">Email</a> ❤️
+            `,
+            "#whitelist-desc": `
+            <p id="whitelist-desc"> Виявлення 
+            <span id="whitelist-status-on" class="blue-text"> Увімкнено </span> 
+            <span id="whitelist-status-off" class="red-text hidden"> Вимкнено </span> 
+            для цього сайту </p>
+            `,
+        },
+        // Russian translations
+        ru: {
+            "#settings": "Настройки",
+            "#blurryStart": "Размывать медиа при загрузке:",
+            ".tooltiptext": "Если включено, все изображения и видео будут размыты по умолчанию, пока не начнётся распознавание.",
+            "#blurAmount": `
+            Уровень размытия:
+            <span id="blur-amount-value">${settings.blurAmount}%</span>
+            `,
+            "#grayscale": "Чёрно-белый режим:",
+            "#strictness": `Строгость:
+            <span id="strictness-value">${settings.strictness * 100}%</span>
+            `,
+            "#mediaToBlur": "Медиа для размытия",
+            "#blurImages": "Изображения",
+            "#blurVideos": "Видео",
+            "#facesToBlur": "Лица для размытия",
+            "#blurMale": "Мужские",
+            "#blurFemale": "Женские",
+            "#unblurOnHover": "Убрать размытие при наведении",
+            "#unblurImages": "Изображения",
+            "#unblurVideos": "Видео",
+            ".refresh": " (требуется обновление страницы):",
+            "#refresh-message": "Обновите страницу, чтобы увидеть изменения.",
+            ".bmc-btn-text": "Поддержать проект",
+            ".feedback": `
+            <span> Нам важно ваше мнение, напишите нам через </span> <a href="https://forms.gle/mDDjh44MKRVemWX86" target="_blank">форму</a> или 
+            <a href="mailto:md.alganzory@gmail.com" target="_blank">Email</a> ❤️
+            `,
+            "#whitelist-desc": `
+            <p id="whitelist-desc"> Обнаружение 
+            <span id="whitelist-status-on" class="blue-text"> Включено </span> 
+            <span id="whitelist-status-off" class="red-text hidden"> Выключено </span> 
+            для этого сайта </p>
+            `,
+        },
     };
 };
 
@@ -157,4 +229,6 @@ const HB_TRANSLATIONS_DIR = {
     tr: "ltr",
     ar: "rtl",
     ur: "rtl",
+    uk: "ltr",
+    ru: "ltr",
 };
