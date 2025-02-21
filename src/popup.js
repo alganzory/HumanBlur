@@ -18,12 +18,16 @@ const allSettings = ["blurAmount", "gray", ...refreshableSettings];
 
 var currentWebsite, refreshMessage, container;
 
-const initCalls = () => {
-	const browserLang = navigator.language?.split("-")[0] ?? "en";
-	changeLanguage(settings.language ?? browserLang, settings);
-	displaySettings(settings);
-	addListeners();
-}
+const initCalls = async () => {
+  const browserLang = navigator.language?.split("-")[0] ?? "en";
+  
+  // waiting for the language to load and apply.
+  await changeLanguage(settings.language ?? browserLang, settings);
+  
+  // Now that the language is loaded, we display the settings and add event listeners
+  displaySettings(settings);
+  addListeners();
+};
 
 function initPopup() {
 	loadLocalSettings().then(() => getCurrentWebsite()).then(
@@ -57,7 +61,6 @@ function getCurrentWebsite() {
 		});
 	});
 }
-
 
 function toggleAllInputs() {
 	if (container) {
@@ -213,26 +216,44 @@ function updateCheckbox(key) {
 	};
 }
 
-function changeLanguage(lang, settings) {	
-	document.body.lang = lang;
-	document.getElementById('container').dir = HB_TRANSLATIONS_DIR[lang];
-	
-	const translations = getTranslations(settings)?.[lang];
-	const keys = Object.keys(translations);
-	keys.forEach(key => {
-		const elements = document.querySelectorAll(key);
-		elements.forEach(element => {
-			element.innerHTML = translations[key];
-			// change direction of element 
-			if (HB_TRANSLATIONS_DIR[lang]) {
-				element.dir = HB_TRANSLATIONS_DIR[lang];
-			}
-		})
-	});	
+async function changeLanguage(lang, settings) {  
+  // Set language attribute
+  document.body.lang = lang;
+  
+  // Get text direction from the existing HB_TRANSLATIONS_DIR
+  const direction = HB_TRANSLATIONS_DIR[lang] || "ltr";
+  document.getElementById('container').dir = direction;
+  
+  try {
+    // Load translations from file
+    const response = await fetch(browser.runtime.getURL(`src/assets/locales/${lang}.json`));
+    if (!response.ok) {
+      console.error(`Failed to load ${lang} translation: ${response.statusText}`);
+      // Continue with current translations if file can't be loaded
+      return;
+    }
+    
+    const translations = await response.json();
+    
+    // Apply translations to DOM elements
+    Object.keys(translations).forEach(key => {
+      const elements = document.querySelectorAll(key);
+      elements.forEach(element => {
+        element.innerHTML = translations[key];
+        // Set direction for each element if needed
+        element.dir = direction;
+      });
+    });
+    
+    // Save user's language preference
+    settings.language = lang;
+    browser.storage.sync.set({ "hb-settings": settings });
 
-	settings.language = lang;
-	chrome.storage.sync.set({ "hb-settings": settings });
-}
+	displaySettings(settings);
+  } catch (error) {
+    console.error(`Error changing language to ${lang}:`, error);
+  }
+}	
 
 function updateWhitelist (e) {
 	if (e.target.checked){

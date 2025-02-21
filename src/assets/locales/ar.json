@@ -1,0 +1,22 @@
+{
+  "#settings": "الإعدادات",
+  "#blurryStart": "تشويش الوسائط مسبقا:",
+  ".tooltiptext": "عند تفعيل هذا الخيار سيتم تشويش جميع الصور ومقاطع الفيديو مسبقا حتى يبدأ الكشف.",
+  "#blurAmount": "كمية التشويش: <span id='blur-amount-value'>{blurAmount}%</span>",
+  "#grayscale": "رمادي:",
+  "#strictness": "الدقة: <span id='strictness-value'>{strictness}%</span>",
+  "#mediaToBlur": "الوسائط التي يجب تشويشها",
+  "#blurImages": "الصور",
+  "#blurVideos": "مقاطع الفيديو",
+  "#facesToBlur": "الوجوه التي يجب تشويشها",
+  "#blurMale": "الذكور",
+  "#blurFemale": "الإناث",
+  "#unblurOnHover": "إلغاء التشويش عند المرور بالمؤشر",
+  "#unblurImages": "الصور",
+  "#unblurVideos": "مقاطع الفيديو",
+  ".refresh": " (يتطلب إعادة تحميل الصفحة):",
+  "#refresh-message": "أعد تحميل الصفحة لترى التغييرات.",
+  ".bmc-btn-text": "دعم المشروع",
+  ".feedback": "نحب أن نسمع رأيك عبر <a href='https://forms.gle/mDDjh44MKRVemWX86' target='_blank'>الاستمارة</a> أو <a href='mailto:md.alganzory@gmail.com' target='_blank'>البريد الإلكتروني</a> ❤️",
+  "#whitelist-desc": "الفحص <span id='whitelist-status-on' class='blue-text'> مفعل </span> <span id='whitelist-status-off' class='red-text hidden'> معطل </span> لهذا الموقع"
+}
