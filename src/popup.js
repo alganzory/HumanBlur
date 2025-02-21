@@ -21,10 +21,10 @@ var currentWebsite, refreshMessage, container;
 const initCalls = async () => {
   const browserLang = navigator.language?.split("-")[0] ?? "en";
   
-  // Ожидаем загрузки и применения языка
+  // waiting for the language to load and apply.
   await changeLanguage(settings.language ?? browserLang, settings);
   
-  // Теперь, когда язык загружен, отображаем настройки и добавляем слушатели
+  // Now that the language is loaded, we display the settings and add event listeners
   displaySettings(settings);
   addListeners();
 };
@@ -61,7 +61,6 @@ function getCurrentWebsite() {
 		});
 	});
 }
-
 
 function toggleAllInputs() {
 	if (container) {
@@ -216,7 +215,6 @@ function updateCheckbox(key) {
 		showRefreshMessage(key);
 	};
 }
-
 
 async function changeLanguage(lang, settings) {  
   // Set language attribute

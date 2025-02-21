@@ -95,7 +95,7 @@ chrome.contextMenus.onClicked.addListener((info, tab) => {
 	return true;
 });
 
-/* // on install, onboarding
+// on install, onboarding
 browser.runtime.onInstalled.addListener(function (details) {
 	if (details?.reason === "install") {
 		chrome.tabs.create({
@@ -114,4 +114,3 @@ browser.runtime.onInstalled.addListener(function (details) {
 
 // on uninstall
 chrome.runtime.setUninstallURL("https://forms.gle/RovVrtp29vK3Z7To7");
- */
