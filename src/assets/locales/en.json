@@ -2,9 +2,9 @@
     "#settings": "Settings",
     "#blurryStart": "Blur media on load:",
     ".tooltiptext": "When enabled, all images and videos will be blurred by default until detection starts.",
-    "#blurAmount": "Blur Amount: <span id=\"blur-amount-value\">{blurAmount}%</span>",
+    "#blurAmount": "Blur Amount: <span id='blur-amount-value'>{blurAmount}%</span>",
     "#grayscale": "Grayscale:",
-    "#strictness": "Strictness: <span id=\"strictness-value\">{strictness}%</span>",
+    "#strictness": "Strictness: <span id='strictness-value'>{strictness}%</span>",
     "#mediaToBlur": "Media to Blur",
     "#blurImages": "Images",
     "#blurVideos": "Videos",
@@ -16,5 +16,8 @@
     "#unblurVideos": "Videos",
     ".refresh": " (requires page refresh):",
     "#refresh-message": "Refresh the page to see the changes.",
-    "#whitelist-desc": "<p id=\"whitelist-desc\"> Detection is <span id=\"whitelist-status-on\" class=\"blue-text\"> On </span> <span id=\"whitelist-status-off\" class=\"red-text hidden\"> Off </span> for this website </p>"
-}
+    ".bmc-btn-text": "Support the project",
+    ".feedback": "We love to hear your feedback through our <a href='https://forms.gle/mDDjh44MKRVemWX86' target='_blank'>Form</a> or <a href='mailto:md.alganzory@gmail.com' target='_blank'>Email</a> ❤️",
+    "#whitelist-desc": "Detection is <span id='whitelist-status-on' class='blue-text'> On </span> <span id='whitelist-status-off' class='red-text hidden'> Off </span> for this website"
+  }
+  
