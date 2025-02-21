@@ -1,0 +1,21 @@
+{
+    "#settings": "Ayarlar",
+    "#blurryStart": "Yüklenirken bulanıklaştır",
+    ".tooltiptext": "Etkinleştirildiğinde, tüm resimler ve videolar, algılama başlayana kadar varsayılan olarak bulanıklaştırılır.",
+    "#blurAmount": "Bulanıklaştırma seviyesi: <span id='blur-amount-value'>{blurAmount}%</span>",
+    "#grayscale": "Grileştir:",
+    "#strictness": "Katılık: <span id='strictness-value'>{strictness}%</span>",
+    "#mediaToBlur": "Bulanıklaştırılacak medya",
+    "#blurImages": "Resimler",
+    "#blurVideos": "Videolar",
+    "#facesToBlur": "Bulanıklaştırılacak yüzler",
+    "#blurMale": "Erkek",
+    "#blurFemale": "Kadın",
+    "#unblurOnHover": "Üzerine gelindiğinde bulanıklığı kaldır",
+    "#unblurImages": "Resimler",
+    "#unblurVideos": "Videolar",
+    ".refresh": " (sayfa yenileme gerektirir):",
+    "#refresh-message": "Değişiklikleri görmek için sayfayı yenile.",
+    "#whitelist-desc": "Bu web sitesi için algılama <span id='whitelist-status-on' class='blue-text'> Açık </span> <span id='whitelist-status-off' class='red-text hidden'> Kapalı </span>"
+  }
+  

@@ -1,0 +1,20 @@
+{
+    "#settings": "Settings",
+    "#blurryStart": "Blur media on load:",
+    ".tooltiptext": "When enabled, all images and videos will be blurred by default until detection starts.",
+    "#blurAmount": "Blur Amount: <span id=\"blur-amount-value\">{blurAmount}%</span>",
+    "#grayscale": "Grayscale:",
+    "#strictness": "Strictness: <span id=\"strictness-value\">{strictness}%</span>",
+    "#mediaToBlur": "Media to Blur",
+    "#blurImages": "Images",
+    "#blurVideos": "Videos",
+    "#facesToBlur": "Faces to Blur",
+    "#blurMale": "Male",
+    "#blurFemale": "Female",
+    "#unblurOnHover": "Unblur on hover",
+    "#unblurImages": "Images",
+    "#unblurVideos": "Videos",
+    ".refresh": " (requires page refresh):",
+    "#refresh-message": "Refresh the page to see the changes.",
+    "#whitelist-desc": "<p id=\"whitelist-desc\"> Detection is <span id=\"whitelist-status-on\" class=\"blue-text\"> On </span> <span id=\"whitelist-status-off\" class=\"red-text hidden\"> Off </span> for this website </p>"
+}

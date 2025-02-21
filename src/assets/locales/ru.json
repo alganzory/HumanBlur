@@ -1,0 +1,21 @@
+{
+    "#settings": "Настройки",
+    "#blurryStart": "Размывать медиа при загрузке:",
+    ".tooltiptext": "Если включено, все изображения и видео будут размыты по умолчанию, пока не начнется распознавание.",
+    "#blurAmount": "Степень размытия: <span id='blur-amount-value'>{blurAmount}%</span>",
+    "#grayscale": "Черно-белый режим:",
+    "#strictness": "Строгость: <span id='strictness-value'>{strictness}%</span>",
+    "#mediaToBlur": "Медиа для размытия",
+    "#blurImages": "Изображения",
+    "#blurVideos": "Видео",
+    "#facesToBlur": "Лица для размытия",
+    "#blurMale": "Мужские",
+    "#blurFemale": "Женские",
+    "#unblurOnHover": "Показывать при наведении",
+    "#unblurImages": "Изображения",
+    "#unblurVideos": "Видео",
+    ".refresh": " (требуется перезагрузка страницы):",
+    "#refresh-message": "Обновите страницу",
+    "#whitelist-desc": "Распознавание <span id='whitelist-status-on' class='blue-text'> Включено </span> <span id='whitelist-status-off' class='red-text hidden'> Выключено </span> для этого сайта"
+  }
+  
